@@ -11,9 +11,9 @@ if CONDA_LIB not in os.environ.get('LD_LIBRARY_PATH', '') and 'RE_EXECED' not in
     os.execv(sys.executable, [sys.executable] + sys.argv)
 import dlib
 
-SRC_ROOT = "/DATA1/Poulomi/Manipulated_ID/Final_ID_dataset_split"
-OUT_CONTENT = "/DATA1/Poulomi/Manipulated_ID/Final_ID_dataset_split_content"
-OUT_TEMPLATE = "/DATA1/Poulomi/Manipulated_ID/Final_ID_dataset_split_template"
+SRC_ROOT = "/Path/to/your/data//Manipulated_ID/Final_ID_dataset_split"
+OUT_CONTENT = "/Path/to/your/data//Manipulated_ID/Final_ID_dataset_split_content"
+OUT_TEMPLATE = "/Path/to/your/data//Manipulated_ID/Final_ID_dataset_split_template"
 
 # ── PERFECTED BLACKOUT COORDINATES (Final Fine-Tuning v2) ────────────────────
 
