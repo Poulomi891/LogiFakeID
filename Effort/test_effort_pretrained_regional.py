@@ -35,18 +35,18 @@ warnings.filterwarnings("ignore")
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-REPO_ROOT = "/DATA1/Poulomi/Manipulated_ID/Effort-AIGI-Detection"
+REPO_ROOT = "/Path/to/your/data/Manipulated_ID/Effort-AIGI-Detection"
 BENCH_ROOT = os.path.join(REPO_ROOT, "DeepfakeBench")
 sys.path.insert(0, BENCH_ROOT)
 sys.path.insert(0, os.path.join(BENCH_ROOT, "training"))
 
 from training.detectors import DETECTOR
 
-CONTENT_ROOT = "/DATA1/Poulomi/Manipulated_ID/Final_ID_dataset_split_content"
-TEMPLATE_ROOT = "/DATA1/Poulomi/Manipulated_ID/Final_ID_dataset_split_template"
+CONTENT_ROOT = "/Path/to/your/data/Manipulated_ID/Final_ID_dataset_split_content"
+TEMPLATE_ROOT = "/Path/to/your/data/Manipulated_ID/Final_ID_dataset_split_template"
 PRETRAINED_WEIGHTS = os.path.join(REPO_ROOT, "effort_clip_L14_trainOn_FaceForensic.pth")
 CONFIG_PATH = os.path.join(BENCH_ROOT, "training/config/detector/effort.yaml")
-RESULTS_DIR = "/DATA1/Poulomi/Manipulated_ID/Results/results_effort_pretrained_regional"
+RESULTS_DIR = "/Path/to/your/data/Manipulated_ID/Results/results_effort_pretrained_regional"
 VIS_DIR = os.path.join(RESULTS_DIR, "visualizations")
 os.makedirs(VIS_DIR, exist_ok=True)
 
