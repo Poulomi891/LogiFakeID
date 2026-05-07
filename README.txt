@@ -1,4 +1,4 @@
-# LogiFakeID: Document Forgery Detection
+# LogiFakeID: Document Forgery Benchmarking.
 
 This repository contains the source code for the document forgery benchmarking and evaluations.
 
