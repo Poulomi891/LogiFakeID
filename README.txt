@@ -1,8 +1,10 @@
-# LogiFakeID: Document Forgery Benchmarking.
+# LogiFakeID: Document Forgery Generation and Benchmarking.
 
-This repository contains the source code for the document forgery benchmarking and evaluations.
+This repository contains the source code for the document forgery generation, benchmarking and evaluations.
 
-## Requirements
+For reference, we have added the dataset generation code in Aadhar_card_generation.ipynb
+
+## Requirements for benchmarking and evaluation
 
 Install the dependencies using:
 ```bash
